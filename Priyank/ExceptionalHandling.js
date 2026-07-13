@@ -16,6 +16,7 @@ console.log(x+y) // this code will not execute as the program will crash at the 
 
 // first way - try catch block
 
+
 let a=10
 let b=5
 

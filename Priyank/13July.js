@@ -59,21 +59,57 @@ else {
 
 
 
-let browser = 'Firefox'
+// let browser = 'Firefox'
 
-if (browser == 'Chrome'){
-    console.log('browser should be open')
-} else if (browser == 'CHROME'){
-    console.log('browser  open')
-} else if (browser == 'chrome'){
-    console.log('browser correct')
-} else {
-    console.log('Browser is Invalid')
+// if (browser == 'Chrome'){
+//     console.log('browser should be open')
+// } else if (browser == 'CHROME'){
+//     console.log('browser  open')
+// } else if (browser == 'chrome'){
+//     console.log('browser correct')
+// } else {
+//     console.log('Browser is Invalid')
+// }
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+// Exceptional Handling -- try catch block
+
+// let x = 1000
+// let y = 10
+
+// console.log(x*y)
+// console.log(x*z)
+// console.log(x-y)
+
+// Define -- agr code break hua then uska error store kr lena and aage k code execute kar dena
+// error code with exceptional handling
+
+// first way - try catch block
+
+//syntax --- 
+/*
+try {
+condition/code/statment
+}catch(error){
+console.log('Error is - ' + error)
 }
+*/
 
 
 
+let a=1000
+let b=10
 
+try {
+    console.log(a*c)
+}
+catch(error){
+    console.log(error)
+}
+ 
+console.log(a+b)
 
 
 
