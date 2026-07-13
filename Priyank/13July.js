@@ -86,7 +86,7 @@ else {
 // Define -- agr code break hua then uska error store kr lena and aage k code execute kar dena
 // error code with exceptional handling
 
-// first way - try catch block
+// try catch block
 
 //syntax --- 
 /*
@@ -97,22 +97,34 @@ console.log('Error is - ' + error)
 }
 */
 
+// let a=1000
+// let b=10
 
-
-let a=1000
-let b=10
-
-try {
-    console.log(a*c)
-}
-catch(error){
-    console.log(error)
-}
+// try {
+//     console.log(a*c)
+// }
+// catch(error){
+//     console.log(error)
+// }
  
-console.log(a+b)
+// console.log(a+b)
 
 
 
+let arr=[1,2,3,4,5, 'Swati', 'Priyank',9,10]
 
+//push method is used to add element at the end of the array
+arr.push(11,12,'Hello') // add element at the end of the array
+console.log(arr)
+
+// //pop method is used to remove the last element of the array
+ arr.pop() // remove the last element of the array
+console.log(arr)
+
+arr.shift() // remove the first element of the array
+console.log(arr)
+
+arr.unshift(89,91,'HI') // add element at the beginning of the array
+console.log(arr)
 
 
