@@ -87,7 +87,7 @@
 // let StdName = [['A','B','C'],['P','S','T'],['X','Y','Z']]
 
 // console.log(StdName)
-// console.log(StdName[1][1])
+// console.log(StdName[1])
 
 
 // // length ---- 
