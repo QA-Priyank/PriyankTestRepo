@@ -77,25 +77,25 @@ Code/statement/Print
 
 
 
-function username (user){
-    return user
-    //console.log('')
-}
+// function username (user){
+//     return user
+//     //console.log('')
+// }
 
-function password (password){
-    return password
-}
+// function password (password){
+//     return password
+// }
 
-function login (){
-Name = username('SwatiS')
-pass = password(12345)
-if (Name =='Swati' && pass ==12345){
-    console.log('Login Success')
-}else{
-    console.log('Login Failed')
-}
-}
-login()
+// function login (){
+// Name = username('SwatiS')
+// pass = password(12345)
+// if (Name =='Swati' && pass ==12345){
+//     console.log('Login Success')
+// }else{
+//     console.log('Login Failed')
+// }
+// }
+// login()
 
 
 // Arrow Function 
@@ -105,18 +105,31 @@ function Function_name (){
 // Arrow
 1. Single thread execute/print karne k liye
 
-const name = function_name => console.log() // variable define 
+const name = parameter_name => console.log(parameter_name) // variable define 
 
 2. Multiple thread execute karne k liye
 
-const name = function_name => {
-    console.log()
-    console.log()
-    console.log()
-    }
+const newname=(Yes)=>{ // use any thing (var, const, let) then function name and then = and then parameter in () and then => and then function body in {}
+console.log("Aayiye Swagat hai aapka") // body me kitne bhi console pass kar skate hai
+console.log(Yes) // akhri me parameter pass karna hai
+}
+
 
 */
 
+//1. Single execute/print karne k liye
 
+// const name = Parameter => console.log(Parameter)
 
+// name('Swati')
 
+// 2. Multiple(jshjh,shkas,sjhaskh,skajs)
+
+const name = (name,age,place) => {
+    console.log(name,age,place, 'Hello')
+    // console.log('Hi there')
+    // console.log(place)
+    
+}
+
+name('Swati',100)
