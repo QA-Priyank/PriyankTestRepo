@@ -7,9 +7,10 @@ test('Homepage', async ({ page }) => {
    await page.getByPlaceholder('Search Amazon.in', {exact : true}).fill('Iphone16')
    await page.getByRole("button", {name : 'Go', exact : true}).click()
    
+   /*
    await page.locator('(//button[@class="a-button-text"])[5]').click()
 
- /*  
+ 
    await page.getByText("See options").click()
    await page.locator('(//span[@id = "color_name_1-announce"])[1]').click()
 
@@ -27,10 +28,10 @@ test('Homepage', async ({ page }) => {
     console.log('Price is Matching for Iphone16')
    }else 
     console.log('Price is not Matching')
+*/
 
-
-
-//await page.getByText("iPhone 16 Plus 256 GB: 5G Mobile Phone with Camera Control, A18 Chip and a Big Boost in Battery Life. Works with AirPods; Teal").click()
+await page.getByText("iPhone 16 Plus 256 GB: 5G Mobile Phone with Camera Control, A18 Chip and a Big Boost in Battery Life. Works with AirPods; Black").click()
+await page.locator('(//input[@id="add-to-cart-button"])[2]').click()
 
 
   /* 
