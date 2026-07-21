@@ -35,6 +35,11 @@ catch(error){
 }
 
 
+const age = 30
+const sector = 45
+
+
+
 
 
 
