@@ -17,5 +17,4 @@ await page.goto ('https://www.saucedemo.com/')
     // nth start after first and end befor last product ---- and always start from 0(indexing) 
     await page.locator('//button[.="Add to cart"]').nth(2).click()
 
-
 })

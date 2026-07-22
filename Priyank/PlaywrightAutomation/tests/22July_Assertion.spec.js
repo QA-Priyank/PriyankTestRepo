@@ -14,3 +14,17 @@ test ('page Assertions', async ({page}) => {
 
 
 })
+
+test ('Locator elements assertions', async ({page}) => {
+
+    await page.goto ('https://www.saucedemo.com/')
+    await page.getByPlaceholder('Username').fill('standard_user')
+
+    await page.getByPlaceholder('Password').fill('secret_sauce')
+
+    const LoginButton = await page.locator ('//input[@class="submit-button btn_action"]')
+    await expect(LoginButton).toBeEnabled()
+
+    await LoginButton.click()
+
+})
