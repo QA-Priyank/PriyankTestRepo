@@ -47,5 +47,10 @@ test ('Open Add to cart', async ({page}) => {
    //await page.getByRole ('Button',  {name: "Cart", exact:true})
 
 
+   //2nd page -------------- newpage
+
+   //newpage.lo
+   // page.loc
+
 })
 

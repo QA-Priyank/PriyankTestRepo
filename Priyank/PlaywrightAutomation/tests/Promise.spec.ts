@@ -14,7 +14,14 @@
 // - Fail
 // - Pending
 
-// // await Promise.all([context.waitforEvent('per define var like - page'),var.click()])
+// promise(jdhjs)
+
+// promise.all([expecation, operation/action])
+
+// browserContext = open new browser page after clearing cache/cookies
+// context = page sath relate krta h/ new browser k ander new tab open krega
+
+// // await Promise.all([context.waitforEvent('page'),locator.click()])
 // // context.waitforEvent('') --- Expectation
 // // var.click() -- Operation
 

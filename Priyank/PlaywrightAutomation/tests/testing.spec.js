@@ -3,6 +3,13 @@ import {test, expect} from '@playwright/test'
 //tc ya multiple tcs
 
 /*
+
+test ('', async ({page})=>{
+    ---------------
+    })
+
+
+
 getBy Playwright methods()  -----
 goto --- page open karana
 getByText --- text available in inspect 

@@ -28,3 +28,28 @@ await expect(search).toBeEnabled()
 await search.click()
 
 })
+
+
+test ('Other Assertions', async ({page}) => {
+
+    await page.goto ('https://www.saucedemo.com/')
+
+    const actualtext = page.locator("//div[.='Swag Labs']")
+    //Text
+    //await expect(actualtext).toHaveText('Swag Labs')
+    //await expect(actualtext).toContainText('Swag')
+
+    const textfield = page.locator("(//input[@class='input_error form_input'])[1]")
+    await expect(textfield).toHaveCount(1)
+    
+
+    // expect('Priyank').toBe('Priyank')
+    // expect('Priyank').not.toBe('Priyank')
+    // expect('Priyank Sri').toContain('Some')
+
+    //Attribute
+    await expect(textfield).toHaveAttribute("type",'text')
+
+
+
+})

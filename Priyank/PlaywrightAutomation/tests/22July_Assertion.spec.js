@@ -28,3 +28,25 @@ test ('Locator elements assertions', async ({page}) => {
     await LoginButton.click()
 
 })
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// 23 July ---------
+
+//other assertions
+
+test ('Other assertions', async ({page}) => {
+//Text Assertions
+// tohavetext(), tocontaintext()
+await page.goto ('https://www.saucedemo.com/')
+const name = await page.locator("//div[.='Swag Labs']")
+
+//await expect(locator_name).assertions()
+// tohavetext()
+// await expect(page.locator("//div[.='Swag Labs']")).toHaveText('Swag Lab')
+//tocontaintext()
+//await expect().toContainText('Swa')
+
+
+
+
+})
