@@ -41,6 +41,7 @@ test('Browser handling - 2nd way', async ({ browser }) => {
 
 
 
+// Files and Checkbox
 
 
 

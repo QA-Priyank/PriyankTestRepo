@@ -17,6 +17,7 @@ getByRole ---     eg. await page.getByRole ('button/link/alert etc', {name:'GO',
 getByTitle
 getByPlaceholder --- 
 getByLabel
+getByaltText -- image
 
 //locator('')
 

@@ -53,6 +53,7 @@ test ('Dropdown handling for Single Value', async ({page})=>{
     // await country_dropdown.selectOption({index:2})         //index
     await country_dropdown.selectOption('India')         //text
 
+    
     const dropCount = await page.locator("//select[@id='country']/option")
     await expect(dropCount).toHaveCount(10)
 
