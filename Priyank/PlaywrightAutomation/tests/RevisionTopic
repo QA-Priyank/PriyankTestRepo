@@ -1,0 +1,39 @@
+-----------------------------
+1. Github -------------- last
+2. JS and TS 
+3. Playwright
+
+-- Variables (let, var, const)
+-- Data type (string, number, boolean)
+-- String ('', "") 
+-- Methods
+-- Print Statement 
+-- Operators (+,-,*,/, **,% ), (>,<,>=,<=,==,=, !=)
+-- Object 
+-- Loop (for ())
+-- If else ()
+-- Array
+-- Functions ---- 1 class
+-- function name (){
+
+}
+
+-- Arrow Function
+-- Exceptional handling -- try catch
+1 -- Pass
+2 -- Fail (store)
+3 -- Pass
+4 -- Pass
+
+
+
+Playwright ----
+
+- how to write
+- Syntax/Format
+- Playwright in built functionality to find any elements
+- Actions
+- X Path & CSS
+- Assertions
+
+
