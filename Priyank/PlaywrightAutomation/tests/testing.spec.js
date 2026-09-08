@@ -12,20 +12,22 @@ test ('', async ({page})=>{
 
 getBy Playwright methods()  -----
 goto --- page open karana
-getByText --- text available in inspect 
-getByRole ---     eg. await page.getByRole ('button/link/alert etc', {name:'GO', exact:true})
+getByText --- text available in inspect   eg. await page.getBytext ('Go')
+getByRole ---     eg. await page.getByRole ('button', {name:'GO', exact:true})
 getByTitle
 getByPlaceholder --- 
 getByLabel
 getByaltText -- image
-
 //locator('')
+
+
 
 .click() ---- Click karane k liye
 .fill('Iphone') --- Koi bhi Text field me text add karne k liye
 .textcontent() ----  text store karta hai
 .check()
-.filter{hasText:''}
+.filter{hasText:'Sa'}
+.type('i')//keyboard function
 
 */
 

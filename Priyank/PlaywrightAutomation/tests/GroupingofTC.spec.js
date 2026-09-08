@@ -5,7 +5,7 @@ Execute all test cases present under tests folder -
 -- npx playwright test
 
 Execute all test cases present in particular tests file - 
--- npx playwright test .\Amazon.spec.js
+-- npx playwright test .\Amazon.spec.js 
 
 
 ----------
@@ -169,3 +169,16 @@ test ('TC2',{tag:'@smoke'}, async({})=>{
 
 })
 
+
+test.describe('Test Suite 1', ()=>{
+
+test ('Test Case 1',async({page})=>{
+
+
+})
+test ('Test Case 2',async({page})=>{
+
+
+})
+
+})

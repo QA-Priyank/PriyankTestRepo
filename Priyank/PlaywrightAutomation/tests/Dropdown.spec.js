@@ -87,3 +87,53 @@ test ('Date picker', async ({page})=>{
     await page.locator("//td[@class=' ui-datepicker-days-cell-over  ui-datepicker-today']").click()
 
 })
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+/*
+
+Dropdown handling ----
+4 types --
+--- Value('') 
+--- Text ('')
+--- Indexing ({index:0/1/2})
+--- Label ({label:''})
+
+
+///// always use .selectoption for dropdown
+*/
+
+
+
+test('Single dropdown handling', async({page})=>{
+
+    await page.goto('https://testautomationpractice.blogspot.com/')
+    const country = page.locator("#country")
+
+   // await country.selectOption('india') // value
+        //await country.selectOption('Australia') //text
+        //   await country.selectOption({index:1}) //index
+              await country.selectOption({label:'France'}) //label
+
+
+})
+
+test('Multiple dropdown handling', async({page})=>{
+// Array ['','','',''],[]
+    await page.goto('https://testautomationpractice.blogspot.com/')
+    const country = page.locator("#colors")
+
+   // await country.selectOption(['red']) // value
+    await country.selectOption(['White','Blue']) //text
+    //await country.selectOption([{index:2},{index:3}]) //index
+    //await country.selectOption([{label:'Red'},{label:'Green'}]) //label
+
+
+})

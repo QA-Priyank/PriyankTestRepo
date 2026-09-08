@@ -1,0 +1,119 @@
+ID,Test Case,Test Steps,Test Data,Expected Result
+TC-001,Verify Commercial Use field is displayed on claim intake,"1. Log in as Adjuster
+2. Navigate to claim intake screen
+3. Observe the claim information section",Valid adjuster credentials,"Commercial Use: Yes/No"""" radio button is displayed beside the existing Towed In question"
+TC-002,Verify Modified field is displayed on claim intake,"1. Log in as Adjuster
+2. Navigate to claim intake screen
+3. Observe the claim information section",Valid adjuster credentials,"Modified: Yes/No"""" radio button is displayed beside the existing Towed In question"
+TC-003,Verify both new fields appear next to Towed In question,"1. Log in as Adjuster
+2. Open claim intake screen
+3. Locate the Towed In field",Valid adjuster credentials,Commercial Use and Modified fields appear to the right of the existing Towed In radio buttons
+TC-004,Verify Commercial Use field label is correct,"1. Log in as Adjuster
+2. Open claim intake screen
+3. Check the label of the new field",Valid adjuster credentials,"Field label reads exactly """"Commercial Use"""" with Yes and No options"
+TC-005,Verify Modified field label is correct,"1. Log in as Adjuster
+2. Open claim intake screen
+3. Check the label of the new field",Valid adjuster credentials,"Field label reads exactly """"Modified"""" with Yes and No options"
+TC-006,Verify only one option can be selected for Commercial Use,"1. Open claim intake screen
+2. Select Yes for Commercial Use
+3. Then select No for Commercial Use",Select Yes then No,Only one radio button (No) remains selected; Yes is deselected
+TC-007,Verify only one option can be selected for Modified,"1. Open claim intake screen
+2. Select Yes for Modified
+3. Then select No for Modified",Select Yes then No,Only one radio button (No) remains selected; Yes is deselected
+TC-008,Verify Commercial Use and Modified fields are independent,"1. Open claim intake screen
+2. Select Yes for Commercial Use
+3. Select No for Modified",Commercial Use = Yes; Modified = No,Each field retains its own selection independently
+TC-009,Verify fields are visible on all screen resolutions,"1. Open claim intake on desktop (1920x1080)
+2. Open on laptop (1366x768)
+3. Open on tablet view",Standard resolutions,Both fields are visible and properly aligned at all resolutions
+TC-010,Verify field alignment matches UI design,"1. Open claim intake screen
+2. Compare placement of new fields with Towed In field",UI design specification,Commercial Use and Modified fields are aligned consistently beside Towed In
+TC-011,Save claim with Commercial Use = Yes and Modified = Yes,"1. Open claim intake
+2. Select Yes for Commercial Use
+3. Select Yes for Modified
+4. Submit the claim",Commercial Use = Yes; Modified = Yes,Claim is saved successfully with both values stored as Yes
+TC-012,Save claim with Commercial Use = No and Modified = No,"1. Open claim intake
+2. Select No for Commercial Use
+3. Select No for Modified
+4. Submit the claim",Commercial Use = No; Modified = No,Claim is saved successfully with both values stored as No
+TC-013,Save claim with Commercial Use = Yes and Modified = No,"1. Open claim intake
+2. Select Yes for Commercial Use
+3. Select No for Modified
+4. Submit the claim",Commercial Use = Yes; Modified = No,Claim is saved with Commercial Use = Yes and Modified = No
+TC-014,Save claim with Commercial Use = No and Modified = Yes,"1. Open claim intake
+2. Select No for Commercial Use
+3. Select Yes for Modified
+4. Submit the claim",Commercial Use = No; Modified = Yes,Claim is saved with Commercial Use = No and Modified = Yes
+TC-015,Verify saved values are displayed correctly on claim detail view,"1. Create a claim with Commercial Use = Yes and Modified = No
+2. Open the saved claim detail page",Claim with known field values,Claim detail shows Commercial Use = Yes and Modified = No accurately
+TC-016,Verify adjuster can edit Commercial Use after claim creation,"1. Open an existing saved claim
+2. Change Commercial Use from No to Yes
+3. Save the claim",Existing claim; change Commercial Use to Yes,Commercial Use value is updated and saved successfully
+TC-017,Verify adjuster can edit Modified after claim creation,"1. Open an existing saved claim
+2. Change Modified from No to Yes
+3. Save the claim",Existing claim; change Modified to Yes,Modified value is updated and saved successfully
+TC-018,Verify both fields can be edited together after claim creation,"1. Open an existing saved claim
+2. Change both Commercial Use and Modified
+3. Save the claim",Change both fields to opposite values,Both updated values are saved correctly
+TC-019,Verify fields are editable for all user roles - Adjuster,"1. Log in as Adjuster
+2. Open an existing claim
+3. Edit Commercial Use and Modified fields",Adjuster role credentials,Adjuster can edit and save both fields
+TC-020,Verify fields are editable for all user roles - Supervisor,"1. Log in as Supervisor
+2. Open an existing claim
+3. Edit Commercial Use and Modified fields",Supervisor role credentials,Supervisor can edit and save both fields
+TC-021,Verify fields are editable for all user roles - Admin,"1. Log in as Admin
+2. Open an existing claim
+3. Edit Commercial Use and Modified fields",Admin role credentials,Admin can edit and save both fields
+TC-022,Verify fields appear for all contract types - Contract A,"1. Log in as Adjuster
+2. Create a claim under Contract A
+3. Check for Commercial Use and Modified fields",Contract A claim,Both fields are visible and functional for Contract A
+TC-023,Verify fields appear for all contract types - Contract B,"1. Log in as Adjuster
+2. Create a claim under Contract B
+3. Check for Commercial Use and Modified fields",Contract B claim,Both fields are visible and functional for Contract B
+TC-024,Verify no additional notes are triggered when Commercial Use = Yes,"1. Create a claim with Commercial Use = Yes
+2. Check the notes/activity section of the claim",Commercial Use = Yes,No automatic notes or comments are generated
+TC-025,Verify no additional notes are triggered when Modified = Yes,"1. Create a claim with Modified = Yes
+2. Check the notes/activity section of the claim",Modified = Yes,No automatic notes or comments are generated
+TC-026,Verify no tasks or alerts are triggered when Commercial Use = Yes,"1. Create a claim with Commercial Use = Yes
+2. Check tasks and alerts for the claim",Commercial Use = Yes,No tasks or alerts are created automatically
+TC-027,Verify no tasks or alerts are triggered when Modified = Yes,"1. Create a claim with Modified = Yes
+2. Check tasks and alerts for the claim",Modified = Yes,No tasks or alerts are created automatically
+TC-028,Verify claim workflow is unchanged when Commercial Use = Yes,"1. Create a claim with Commercial Use = Yes
+2. Process the claim through normal workflow steps",Commercial Use = Yes,Claim follows the standard workflow without any additional steps or changes
+TC-029,Verify claim workflow is unchanged when Modified = Yes,"1. Create a claim with Modified = Yes
+2. Process the claim through normal workflow steps",Modified = Yes,Claim follows the standard workflow without any additional steps or changes
+TC-030,Verify claim adjudication is not affected by Commercial Use value,"1. Create two claims - one with Commercial Use = Yes and one with No
+2. Adjudicate both claims",Two claims with different Commercial Use values,Adjudication outcome is not influenced by the Commercial Use field value
+TC-031,Verify claim payment is not affected by Modified value,"1. Create two claims - one with Modified = Yes and one with No
+2. Process payment for both",Two claims with different Modified values,Payment processing is not influenced by the Modified field value
+TC-032,Verify Commercial Use field is available in reports,"1. Navigate to the reporting module
+2. Check available fields for filtering or columns",Reporting module access,"Commercial Use"""" field is available as a reportable column or filter"""
+TC-033,Verify Modified field is available in reports,"1. Navigate to the reporting module
+2. Check available fields for filtering or columns",Reporting module access,"Modified"""" field is available as a reportable column or filter"""
+TC-034,Verify report can be filtered by Commercial Use = Yes,"1. Open reporting module
+2. Apply filter: Commercial Use = Yes
+3. Run the report",Filter: Commercial Use = Yes,Report returns only claims where Commercial Use = Yes
+TC-035,Verify report can be filtered by Modified = Yes,"1. Open reporting module
+2. Apply filter: Modified = Yes
+3. Run the report",Filter: Modified = Yes,Report returns only claims where Modified = Yes
+TC-036,Verify claim ID is associated with Commercial Use response in report,"1. Run a report including Commercial Use field
+2. Verify claim IDs are shown alongside the field value",Report with claim ID and Commercial Use,Each row in the report shows the correct claim ID with its corresponding Commercial Use value
+TC-037,Verify claim ID is associated with Modified response in report,"1. Run a report including Modified field
+2. Verify claim IDs are shown alongside the field value",Report with claim ID and Modified,Each row in the report shows the correct claim ID with its corresponding Modified value
+TC-038,Verify audit trail captures update to Commercial Use field,"1. Open an existing claim
+2. Change Commercial Use value
+3. Save and check audit log",Change Commercial Use from No to Yes,Audit log records the change with user and timestamp
+TC-039,Verify audit trail captures update to Modified field,"1. Open an existing claim
+2. Change Modified value
+3. Save and check audit log",Change Modified from No to Yes,Audit log records the change with user and timestamp
+TC-040,Verify fields are not pre-selected on new claim intake,"1. Open a new claim intake form
+2. Observe the default state of Commercial Use and Modified fields",New claim form,Neither Yes nor No is pre-selected for either field by default
+TC-041,Verify field values persist after page refresh,"1. Open claim intake
+2. Select Yes for Commercial Use and No for Modified
+3. Refresh the page without submitting",Commercial Use = Yes; Modified = No,If the form supports draft state the values persist; otherwise form resets cleanly
+TC-042,Verify existing Towed In field is not affected by the enhancement,"1. Open claim intake after enhancement deployment
+2. Use the Towed In field as before",Towed In field interaction,Towed In field continues to work exactly as before with no changes to its behavior or appearance
+TC-043,Verify data stored in database matches selected value for Commercial Use,"1. Create a claim with Commercial Use = Yes
+2. Query the database for the stored value",Commercial Use = Yes,Database record shows Commercial Use = Yes for the corresponding claim ID
+TC-044,Verify data stored in database matches selected value for Modified,"1. Create a claim with Modified = No
+2. Query the database for the stored value",Modified = No,Database record shows Modified = No for the corresponding claim ID

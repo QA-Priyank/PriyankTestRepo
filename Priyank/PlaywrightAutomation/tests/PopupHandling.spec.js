@@ -41,3 +41,41 @@ test ('Prompt Popup', async ({page}) => {
     await prompt.click()
 
 })
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////
+
+/*
+Popup ---- Three typs
+- Alert -- accept
+- Confirm -- accpet/decline
+- Prompt -- accpet/decline with message 
+
+
+*/
+
+
+test ('popug handle new', async({page})=>{
+await page.goto('https://grotechminds.com/javascript-popup/')
+
+const clickButton = page.getByText('Click ')
+
+// popup handle -- action se phle
+//on
+// always popup ko ---- dialog
+
+page.on('dialog', async(dialog)=>{
+    await page.waitForTimeout(3000)
+    await dialog.accept()
+    //await dialog.dismiss()// decline popup
+
+})
+
+await clickButton.click()
+})

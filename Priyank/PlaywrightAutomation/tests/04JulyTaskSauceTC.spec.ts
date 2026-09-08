@@ -1,6 +1,8 @@
 // 7.goto saucedemo.com and perform to end to end test by adding multiple product 
 // and do assertion on each page verifying user is on the page that he clicked for.
 
+
+
 import {test, expect} from '@playwright/test';
 
 test ('Open page and check assertions on main page', async ({page})=>{
