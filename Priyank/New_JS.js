@@ -400,3 +400,25 @@
 // // //split method is used to split a string into an array of substrings
 
 // console.log(newname.split(" ")); // it will change all string into array
+
+// Iteration & Transformation
+
+// forEach() -- it will iterate through the array and perform the specified action on
+// each element of the array
+
+// map() -- it will iterate through the array and perform the specified action on
+// each element of the array and return a new array with the modified elements
+
+// filter() -- it will iterate through the array and perform the specified action on
+// each element of the array and return a new array with the elements that pass the test
+
+// reduce() -- it will iterate through the array and perform the specified action on
+// each element of the array and return a single value
+
+//forEach()
+
+const arrNew = [1, 2, 3, 4, 5];
+
+arrNew.forEach(function (num) {
+  console.log(num * 3);
+});
