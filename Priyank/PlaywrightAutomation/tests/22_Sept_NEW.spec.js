@@ -22,9 +22,10 @@ test("Handle New page - 1st way", async ({ page }) => {
   await newPage.locator("//div[@class='css-bmpzuf']").click();
 });
 
-test("Handle New Page - 2nd way", async ({ browser }) => {
+test("Handle New Page - 2nd way", async ({ browser, page }) => {
   const context = await browser.newContext();
-  const page = await context.newPage();
+  //const page = await context.newPage();
+  page = await context.newPage();
 
   await page.goto("https://www.nykaa.com/");
   await page.getByPlaceholder("Search on Nykaa").fill("Lipstick");
@@ -44,8 +45,3 @@ test("Handle New Page - 2nd way", async ({ browser }) => {
 
   await newPage1.locator("//div[@class='css-bmpzuf']").click();
 });
-
-
-
-
-
