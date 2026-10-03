@@ -52,3 +52,21 @@ test("filter Validation", async ({ page }) => {
   await tableValue.nth(1).click();
   await tableValue.nth(2).click();
 });
+
+/////////////////////////////////////////////////////
+
+// 29 Sept
+
+test("Chaining Concept", async ({ page }) => {
+  await page.goto("https://testautomationpractice.blogspot.com/");
+
+  await page
+    .getByRole("table")
+    .filter({ hasText: "Smartwatch" })
+    .getByRole("row")
+    .filter({ hasText: "Laptop" })
+    .getByRole("checkbox")
+    .click();
+
+  //await checkboxVariable.click();
+});

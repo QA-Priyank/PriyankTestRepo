@@ -66,3 +66,39 @@ await timeout
 }
 
 */
+
+///////////////////////////////////////////////////////////////////////////////////
+
+// 27 Sept 2026 ------------------------------
+// Keyboard actions ---
+
+import { test } from "@playwright/test";
+
+test("Keyboard - Shortcut Keys", async ({ page }) => {
+  await page.goto("https://grotechminds.com/registration/");
+  const fname = page.locator("#fname");
+  const lname = page.locator("#lname");
+
+  await fname.click();
+  await page.keyboard.type("TEST QA NEW");
+  await page.keyboard.press("Control+A");
+  await page.keyboard.press("Control+C");
+
+  await lname.click();
+  await page.keyboard.press("Control+V");
+});
+
+test("Keyboard - Down arrow", async ({ page }) => {
+  await page.goto("https://www.amazon.in/");
+  const search = page.getByPlaceholder("Search Amazon.in");
+
+  await search.click();
+  await page.keyboard.type("Phone");
+
+  for (let i = 1; i <= 5; i++) {
+    await page.keyboard.press("ArrowDown");
+    await page.waitForTimeout(2000);
+  }
+
+  await page.keyboard.press("Enter");
+});
