@@ -13,7 +13,6 @@
 
 // // error code with exceptional handling
 
-
 // // first way - try catch block
 
 // let a=10
@@ -25,19 +24,17 @@
 // catch(error){
 //     console.log("error is " + error)
 // }
- 
+
 // console.log(a+b)
 
-
 // console.log("#########################################################")
-// // if 2nd TC is dependend on 1st on and its failing then how we can code -- 
+// // if 2nd TC is dependend on 1st on and its failing then how we can code --
 
 // // for example we have log in page and the home page (homepage will open after login)
 
-
 // function loginpage (){
 //     try{
-//         let p =20 
+//         let p =20
 //     console.log(p/w)
 // }
 // catch(error){
@@ -52,13 +49,13 @@
 
 // homepage()
 
-// // try catch finally block -- it will execute if previous code is executed or not  
+// // try catch finally block -- it will execute if previous code is executed or not
 
 // console.log("#########################################################")
 
 // function loginpage1 (){
 //     try{
-//         let l =20 
+//         let l =20
 //     console.log(l/q)
 // }
 // catch(error){
@@ -84,23 +81,41 @@
 //Exceptional Handling ------
 // Further code break na ho after to any fail case
 
+let num1 = 100;
+let num2 = 10;
 
-let num1 = 100
-let num2 = 10
+console.log(num1 + num2);
 
-console.log(num1+num2)
-
-try{
-
-console.log(num1+num3)
-
-} catch(error){
-
-    console.log('Error is :', error)
-
+try {
+  console.log(num1 + num3);
+} catch (error) {
+  console.log("Error is :", error);
 }
 
+console.log(num1 - num2);
+console.log(num1 * num2);
 
-console.log(num1-num2)
-console.log(num1*num2)
+////////////////////////////////
 
+// 28 Sept ----------------------
+
+// exceptional Handling ----
+// syntax -
+/*
+try(){
+}catch(error)
+{}
+*/
+
+let a = 2;
+let b = 4;
+
+console.log(a + b);
+
+try {
+  console.log(a * c);
+} catch (error) {
+  console.log("Fail");
+}
+
+console.log(a * b);

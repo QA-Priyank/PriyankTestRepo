@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "ts-node OOPS/Import_Export/import.ts",
+    "compile": "tsc --project ."
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -11,6 +14,7 @@
   "devDependencies": {
     "@playwright/test": "^1.60.0",
     "@types/node": "^25.9.1",
+    "ts-node": "^10.9.2",
     "typescript": "^6.0.3"
   }
 }

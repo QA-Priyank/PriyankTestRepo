@@ -24,7 +24,7 @@ import JSONData from "../OOPS/DataStore/DataJSON.json"; // json
 test.describe("Test Suit", () => {
   for (let i = 0; i < JSONData.length; i++) {
     test(`Open All Pages ${i}`, async ({ page }) => {
-      await page.goto(JSONData[i].url1);
+      await page.goto(JSONData[i].url1 || JSONData[i].url2 || JSONData[i].url3);
     });
   }
 });

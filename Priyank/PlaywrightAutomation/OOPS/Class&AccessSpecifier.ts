@@ -72,9 +72,50 @@ Class Login{
 }
 
 
+// */
 
+// class Details {
+//   public static Swati() {
+//     console.log("Public Static method");
+//   }
 
+//   public NEWname() {
+//     console.log("Public Non-Static method");
+//   }
+// }
 
+// // how to call Static Method
 
-*/
+// Details.Swati();
 
+// // how to call NON Static Method
+
+// const sss = new Details(); // object created
+// sss.NEWname();
+
+/////////////////////////////////////////
+
+// 04 Oct
+
+class SH {
+  public static M1() {
+    console.log("Public");
+  }
+
+  private static M2() {
+    console.log("Private");
+  }
+
+  protected static M3() {
+    console.log("Protected");
+  }
+}
+
+// calling methods
+SH.M1(); // public
+
+// obj create
+// const abcd = new SH();
+// abcd.
+
+//// Inheritance
