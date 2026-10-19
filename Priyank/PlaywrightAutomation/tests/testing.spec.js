@@ -1,4 +1,4 @@
-import {test, expect} from '@playwright/test'
+import { test, expect } from "@playwright/test";
 
 //tc ya multiple tcs
 
@@ -31,30 +31,27 @@ getByaltText -- image
 
 */
 
+test("TC1", async ({ page }) => {
+  await page.goto("https://www.saucedemo.com/");
+  await page.getByPlaceholder("Username").fill("standard_user");
+  await page.getByPlaceholder("Password").fill("secret_sauce");
+  await page.locator('//input[@class="submit-button btn_action"]').click();
 
-test ('TC1', async ({page})=>{
+  const priceinhomepage = await page
+    .locator('(//div[@class="inventory_item_price"])[1]')
+    .textContent();
+  console.log(priceinhomepage);
 
-    await page.goto ('https://www.saucedemo.com/')
-    await page.getByPlaceholder('Username').fill('standard_user')
-    await page.getByPlaceholder('Password').fill('secret_sauce')
-    await page.locator ('//input[@class="submit-button btn_action"]').click()
+  await page.locator('//a[@id="item_4_title_link"]').click();
 
-    const priceinhomepage = await page.locator('(//div[@class="inventory_item_price"])[1]').textContent()
-    console.log(priceinhomepage)
+  const priceinaddpage = await page
+    .locator('//div[@class="inventory_details_price"]')
+    .textContent();
+  console.log(priceinaddpage);
 
-    await page.locator('//a[@id="item_4_title_link"]').click()
-
-    const priceinaddpage = await page.locator('//div[@class="inventory_details_price"]').textContent()
-    console.log(priceinaddpage)
-
-    if(priceinaddpage==priceinhomepage){
-        console.log('Price is Matching')
-
-    }else {
-        console.log('Price is Not Matching')
-    }
-
-
-
-})
-
+  if (priceinaddpage == priceinhomepage) {
+    console.log("Price is Matching");
+  } else {
+    console.log("Price is Not Matching");
+  }
+});
